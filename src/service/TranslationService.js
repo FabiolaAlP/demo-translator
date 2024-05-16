@@ -28,7 +28,6 @@ import axios from 'axios';
   try {
     const response = await axios.request(options);
     const result = response.data[0].translations[0].text;
-    // console.log(response.data[0].translations[0].text);
     return result;
   } catch (error) {
     console.error(error);
